@@ -103,10 +103,14 @@ nav {
     transition: transform .5s cubic-bezier(.77, .2, .05, 1);
 }
 
+.on-play-menu {
+    background: #07e3d0;
+}
+
 .header-item {
     padding: 12px 0;
 }
-.header-item a {
+.header-item-link {
     cursor: pointer;
     text-decoration: none;
     color: #212529;
@@ -114,6 +118,18 @@ nav {
     margin: 0 0 0 60px;
     min-width: 145px;
     text-align: left;
+}
+
+.header-item-link:hover {
+    color: #ffffff;
+}
+
+.header-item-link:active {
+    color: #ff5565;
+}
+
+.active {
+    color: #ff5565;
 }
 
 .menuToggle input:checked ~ ul {
@@ -140,6 +156,10 @@ nav {
     cursor: pointer;
     -webkit-transition: .3s;
     transition: .3s
+}
+
+.play-styles {
+    background: linear-gradient(180deg, #07e3d0 45%, #fff 0, #fff);
 }
 
 .main-card img {

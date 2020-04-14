@@ -6,7 +6,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <link href="media-queries.css" rel="stylesheet" type="text/css">
-    <script src="./dist/scripts.js"></script>
     <title>English for kids</title>
 </head>
 <body>
@@ -19,22 +18,40 @@
                     <span></span>
                     <span></span>
                     <span></span>
-                    <ul class="menu">
-                        <li class="header-item active"><a href="#">Main Page</a></li>
-                        <li class="header-item"><a href="#">Action (set A)</a></li>
-                        <li class="header-item"><a href="#">Action (set B)</a></li>
-                        <li class="header-item"><a href="#">Action (set C)</a></li>
-                        <li class="header-item"><a href="#">Adjective</a></li>
-                        <li class="header-item"><a href="#">Animal (set A)</a></li>
-                        <li class="header-item"><a href="#">Animal (set B)</a></li>
-                        <li class="header-item"><a href="#">Clothes</a></li>
-                        <li class="header-item"><a href="#">Emotion</a></li>
+                    <ul class="menu" id="MENU">
+                        <li class="header-item">
+                            <a class="header-item-link active" href="#">Main Page</a>
+                        </li>
+                        <li class="header-item">
+                            <a class="header-item-link" href="#">Action (set A)</a>
+                        </li>
+                        <li class="header-item">
+                            <a class="header-item-link" href="#">Action (set B)</a>
+                        </li>
+                        <li class="header-item">
+                            <a class="header-item-link" href="#">Action (set C)</a>
+                        </li>
+                        <li class="header-item">
+                            <a class="header-item-link" href="#">Adjective</a>
+                        </li>
+                        <li class="header-item">
+                            <a class="header-item-link" href="#">Animal (set A)</a>
+                        </li>
+                        <li class="header-item">
+                            <a class="header-item-link" href="#">Animal (set B)</a>
+                        </li>
+                        <li class="header-item">
+                            <a class="header-item-link" href="#">Clothes</a>
+                        </li>
+                        <li class="header-item">
+                            <a class="header-item-link" href="#">Emotion</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
             <div class="switcher-container">
                 <label class="switcher">
-                    <input type="checkbox" class="switcher-input" checked="">
+                    <input type="checkbox" id="CHECKBOX" class="switcher-input" checked>
                     <span class="switcher-label" data-on="Train" data-off="Play"></span>
                     <span class="switcher-handle"></span>
                 </label>
@@ -42,39 +59,40 @@
         </div>
         <div class="container main-container">
             <a class="main-card" href="#">
-                <img src=" " alt="Action (set A)">
+                <img src="./src/assets/img/dance.jpg" alt="Action (set A)">
                 Action (set A)
             </a>
             <a class="main-card" href="#">
-                <img src=" " alt="Action (set B)">
+                <img src="./src/assets/img/swim.jpg" alt="Action (set B)">
                 Action (set B)
             </a>
             <a class="main-card" href="#">
-                <img src=" " alt="Action (set C)">
+                <img src="./src/assets/img/drop.jpg" alt="Action (set C)">
                 Action (set C)
             </a>
             <a class="main-card" href="#">
-                <img src=" " alt="Adjective">
+                <img src="./src/assets/img/friendly.jpg" alt="Adjective">
                 Adjective
             </a>
             <a class="main-card" href="#">
-                <img src=" " alt="Animal (set A)">
+                <img src="./src/assets/img/cat.jpg" alt="Animal (set A)">
                 Animal (set A)
             </a>
             <a class="main-card" href="#">
-                <img src=" " alt="Animal (set B)">
+                <img src="./src/assets/img/bird.jpg" alt="Animal (set B)">
                 Animal (set B)
             </a>
             <a class="main-card" href="#">
-                <img src=" " alt="Clothes">
+                <img src="./src/assets/img/blouse.jpg" alt="Clothes">
                 Clothes
             </a>
             <a class="main-card" href="#">
-                <img src=" " alt="Emotion">
+                <img src="./src/assets/img/smile.jpg" alt="Emotion">
                 Emotion
             </a>
         </div>
     </div>
 </div>
+<script src="./dist/scripts.js"></script>
 </body>
 </html>

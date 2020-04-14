@@ -1,6 +1,10 @@
 {
   "name": "english-for-kids",
   "version": "1.0.0",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "prod": "webpack --mode prodaction"
+  },
   "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.8.4",
