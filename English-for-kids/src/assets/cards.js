@@ -1,5 +1,8 @@
-const cards = [ 
-  ['Action (set A)', 'Action (set B)', 'Animal (set A)', 'Animal (set B)', 'Clothes', 'Emotions'],
+export const Categories = ['Action (set A)', 'Action (set B)', 'Action (set C)',
+    'Adjective', 'Animal (set A)', 'Animal (set B)', 'Clothes', 'Emotions'];
+
+
+export const cards = [
   [
     {
       word: 'cry',
@@ -300,10 +303,5 @@ const cards = [
       audioSrc: 'audio/laugh.mp3'
     }
   ]
-];
+  ];
 
-
-
-
-
-export default cards;
