@@ -1,306 +1,447 @@
-export const Categories = ['Action (set A)', 'Action (set B)', 'Action (set C)',
-    'Adjective', 'Animal (set A)', 'Animal (set B)', 'Clothes', 'Emotions'];
+export const Categories =
+    [
+      {
+        title: 'Action (set A)',
+        imgSRC: './src/assets/img/dance.jpg',
+        id: 0
+      },
+      {
+        title: 'Action (set B)',
+        imgSRC: './src/assets/img/swim.jpg',
+        id: 1
+      },
+      {
+        title: 'Action (set C)',
+        imgSRC: './src/assets/img/drop.jpg',
+        id: 2
+      },
+      {
+        title: 'Adjective',
+        imgSRC: './src/assets/img/friendly.jpg',
+        id: 3
+      },
+      {
+        title: 'Animal (set A)',
+        imgSRC: './src/assets/img/cat.jpg',
+        id: 4
+      },
+      {
+        title: 'Animal (set B)',
+        imgSRC: './src/assets/img/bird.jpg',
+        id: 5
+      },
+      {
+        title: 'Clothes',
+        imgSRC: './src/assets/img/blouse.jpg',
+        id: 6
+      },
+      {
+        title: 'Emotions',
+        imgSRC: './src/assets/img/smile.jpg',
+        id: 7
+      }
+    ];
 
 
-export const cards = [
+export const Cards = [
   [
     {
       word: 'cry',
       translation: 'плакать',
-      image: 'img/cry.jpg',
-      audioSrc: 'audio/cry.mp3'
+      image: './src/assets/img/cry.jpg',
+      audioSrc: '.src/audio/Action(set_A)/cry.mp3'
     },
     {
       word: 'dance',
       translation: 'танцевать',
-      image: 'img/dance.jpg',
-      audioSrc: 'audio/dance.mp3'
+      image: './src/assets/img/dance.jpg',
+      audioSrc: '.src/audio/Action(set_A)/dance.mp3'
     },
     {
       word: 'dive',
       translation: 'нырять',
-      image: 'img/dive.jpg',
-      audioSrc: 'audio/dive.mp3'
+      image: './src/assets/img/dive.jpg',
+      audioSrc: '.src/audio/Action(set_A)/dive.mp3'
     },
     {
       word: 'draw',
       translation: 'рисовать',
-      image: 'img/draw.jpg',
-      audioSrc: 'audio/draw.mp3'
+      image: './src/assets/img/draw.jpg',
+      audioSrc: '.src/audio/Action(set_A)/draw.mp3'
     },
     {
       word: 'fish',
       translation: 'ловить рыбу',
-      image: 'img/fish.jpg',
-      audioSrc: 'audio/fish.mp3'
+      image: './src/assets/img/fish.jpg',
+      audioSrc: '.src/audio/Action(set_A)/fish.mp3'
     },
     {
       word: 'fly',
       translation: 'летать',
-      image: 'img/fly.jpg',
-      audioSrc: 'audio/fly.mp3'
+      image: './src/assets/img/fly.jpg',
+      audioSrc: '.src/audio/Action(set_A)/fly.mp3'
     },
     {
       word: 'hug',
       translation: 'обнимать',
-      image: 'img/hug.jpg',
-      audioSrc: 'audio/hug.mp3'
+      image: './src/assets/img/hug.jpg',
+      audioSrc: '.src/audio/Action(set_A)/hug.mp3'
     },
     {
       word: 'jump',
       translation: 'прыгать',
-      image: 'img/jump.jpg',
-      audioSrc: 'audio/jump.mp3'
+      image: './src/assets/img/jump.jpg',
+      audioSrc: '.src/audio/Action(set_A)/jump.mp3'
     }
   ],
   [
     {
       word: 'open',
       translation: 'открывать',
-      image: 'img/open.jpg',
-      audioSrc: 'audio/open.mp3'
+      image: './src/assets/img/open.jpg',
+      audioSrc: '.src/audio/Action(set_B)/open.mp3'
     },
     {
       word: 'play',
       translation: 'играть',
-      image: 'img/play.jpg',
-      audioSrc: 'audio/play.mp3'
+      image: './src/assets/img/play.jpg',
+      audioSrc: '.src/audio/Action(set_B)/play.mp3'
     },
     {
       word: 'point',
       translation: 'указывать',
-      image: 'img/point.jpg',
-      audioSrc: 'audio/point.mp3'
+      image: './src/assets/img/point.jpg',
+      audioSrc: '.src/audio/Action(set_B)/point.mp3'
     },
     {
       word: 'ride',
       translation: 'ездить',
-      image: 'img/ride.jpg',
-      audioSrc: 'audio/ride.mp3'
+      image: './src/assets/img/ride.jpg',
+      audioSrc: '.src/audio/Action(set_B)/ride.mp3'
     },
     {
       word: 'run',
       translation: 'бегать',
-      image: 'img/run.jpg',
-      audioSrc: 'audio/run.mp3'
+      image: './src/assets/img/run.jpg',
+      audioSrc: '.src/audio/Action(set_B)/run.mp3'
     },
     {
       word: 'sing',
       translation: 'петь',
-      image: 'img/sing.jpg',
-      audioSrc: 'audio/sing.mp3'
+      image: './src/assets/img/sing.jpg',
+      audioSrc: '.src/audio/Action(set_B)/sing.mp3'
     },
     {
       word: 'skip',
-      translation: 'пропускать, прыгать',
-      image: 'img/skip.jpg',
-      audioSrc: 'audio/skip.mp3'
+      translation: 'прыгать',
+      image: './src/assets/img/skip.jpg',
+      audioSrc: '.src/audio/Action(set_B)/skip.mp3'
     },
     {
       word: 'swim',
       translation: 'плавать',
-      image: 'img/swim.jpg',
-      audioSrc: 'audio/swim.mp3'
+      image: './src/assets/img/swim.jpg',
+      audioSrc: '.src/audio/Action(set_B)/swim.mp3'
+    }
+  ],
+  [
+    {
+      word: 'argue',
+      translation: 'спорить',
+      image: './src/assets/img/argue.jpg',
+      audioSrc: '.src/audio/Action(set_C)/argue.mp3'
+    },
+    {
+      word: 'build',
+      translation: 'строить',
+      image: './src/assets/img/build.jpg',
+      audioSrc: '.src/audio/Action(set_C)/build.mp3'
+    },
+    {
+      word: 'carry',
+      translation: 'нести',
+      image: './src/assets/img/carry.jpg',
+      audioSrc: '.src/audio/Action(set_C)/carry.mp3'
+    },
+    {
+      word: 'catch',
+      translation: 'ловить',
+      image: './src/assets/img/catch.jpg',
+      audioSrc: '.src/audio/Action(set_C)/catch.mp3'
+    },
+    {
+      word: 'drive',
+      translation: 'водить',
+      image: './src/assets/img/drive.jpg',
+      audioSrc: '.src/audio/Action(set_C)/drive.mp3'
+    },
+    {
+      word: 'drop',
+      translation: 'падать',
+      image: './src/assets/img/drop.jpg',
+      audioSrc: '.src/audio/Action(set_C)/drop.mp3'
+    },
+    {
+      word: 'pull',
+      translation: 'тянуть',
+      image: './src/assets/img/pull.jpg',
+      audioSrc: '.src/audio/Action(set_C)/pull.mp3'
+    },
+    {
+      word: 'push',
+      translation: 'толкать',
+      image: './src/assets/img/push.jpg',
+      audioSrc: '.src/audio/Action(set_C)/push.mp3'
+    }
+  ],
+  [
+    {
+      word: 'big',
+      translation: 'большой',
+      image: './src/assets/img/big.jpg',
+      audioSrc: '.src/audio/Adjective/big.mp3'
+    },
+    {
+      word: 'small',
+      translation: 'маленький',
+      image: './src/assets/img/small.jpg',
+      audioSrc: '.src/audio/Adjective/small.mp3'
+    },
+    {
+      word: 'fast',
+      translation: 'быстрый',
+      image: './src/assets/img/fast.jpg',
+      audioSrc: '.src/audio/Adjective/fast.mp3'
+    },
+    {
+      word: 'slow',
+      translation: 'медленный',
+      image: './src/assets/img/slow.jpg',
+      audioSrc: '.src/audio/Adjective/slow.mp3'
+    },
+    {
+      word: 'friendly',
+      translation: 'дружелюбный',
+      image: './src/assets/img/friendly.jpg',
+      audioSrc: '.src/audio/Adjective/friendly.mp3'
+    },
+    {
+      word: 'unfriendly',
+      translation: 'недружелюбный',
+      image: './src/assets/img/unfriendly.jpg',
+      audioSrc: '.src/audio/Adjective/unfriendly.mp3'
+    },
+    {
+      word: 'young',
+      translation: 'иолодой',
+      image: './src/assets/img/young.jpg',
+      audioSrc: '.src/audio/Adjective/young.mp3'
+    },
+    {
+      word: 'old',
+      translation: 'старый',
+      image: './src/assets/img/old.jpg',
+      audioSrc: '.src/audio/Adjective/old.mp3'
     }
   ],
   [
     {
       word: 'cat',
       translation: 'кот',
-      image: 'img/cat.jpg',
-      audioSrc: 'audio/cat.mp3'
+      image: './src/assets/img/cat.jpg',
+      audioSrc: '.src/audio/Animal(set_A)/cat.mp3'
     },
     {
       word: 'chick',
       translation: 'цыплёнок',
-      image: 'img/chick.jpg',
-      audioSrc: 'audio/chick.mp3'
+      image: './src/assets/img/chick.jpg',
+      audioSrc: '.src/audio/Animal(set_A)/chick.mp3'
     },
     {
       word: 'chicken',
       translation: 'курица',
-      image: 'img/chicken.jpg',
-      audioSrc: 'audio/chicken.mp3'
+      image: './src/assets/img/chicken.jpg',
+      audioSrc: '.src/audio/Animal(set_A)/chicken.mp3'
     },
     {
       word: 'dog',
       translation: 'собака',
-      image: 'img/dog.jpg',
-      audioSrc: 'audio/dog.mp3'
+      image: './src/assets/img/dog.jpg',
+      audioSrc: '.src/audio/Animal(set_A)/dog.mp3'
     },
     {
       word: 'horse',
       translation: 'лошадь',
-      image: 'img/horse.jpg',
-      audioSrc: 'audio/horse.mp3'
+      image: './src/assets/img/horse.jpg',
+      audioSrc: '.src/audio/Animal(set_A)/horse.mp3'
     },
     {
       word: 'pig',
       translation: 'свинья',
-      image: 'img/pig.jpg',
-      audioSrc: 'audio/pig.mp3'
+      image: './src/assets/img/pig.jpg',
+      audioSrc: '.src/audio/Animal(set_A)/pig.mp3'
     },
     {
       word: 'rabbit',
       translation: 'кролик',
-      image: 'img/rabbit.jpg',
-      audioSrc: 'audio/rabbit.mp3'
+      image: './src/assets/img/rabbit.jpg',
+      audioSrc: '.src/audio/Animal(set_A)/rabbit.mp3'
     },
     {
       word: 'sheep',
       translation: 'овца',
-      image: 'img/sheep.jpg',
-      audioSrc: 'audio/sheep.mp3'
+      image: './src/assets/img/sheep.jpg',
+      audioSrc: '.src/audio/Animal(set_A)/sheep.mp3'
     }
   ],
   [
     {
       word: 'bird',
       translation: 'птица',
-      image: 'img/bird.jpg',
-      audioSrc: 'audio/bird.mp3'
+      image: './src/assets/img/bird.jpg',
+      audioSrc: '.src/audio/Animal(set_B)/bird.mp3'
     },
     {
       word: 'fish',
       translation: 'рыба',
-      image: 'img/fish1.jpg',
-      audioSrc: 'audio/fish.mp3'
+      image: './src/assets/img/fish1.jpg',
+      audioSrc: '.src/audio/Animal(set_A)/fish.mp3'
     },
     {
       word: 'frog',
       translation: 'жаба',
-      image: 'img/frog.jpg',
-      audioSrc: 'audio/frog.mp3'
+      image: './src/assets/img/frog.jpg',
+      audioSrc: '.src/audio/Animal(set_A)/frog.mp3'
     },
     {
       word: 'giraffe',
       translation: 'жирафа',
-      image: 'img/giraffe.jpg',
-      audioSrc: 'audio/giraffe.mp3'
+      image: './src/assets/img/giraffe.jpg',
+      audioSrc: '.src/audio/Animal(set_A)/giraffe.mp3'
     },
     {
       word: 'lion',
       translation: 'лев',
-      image: 'img/lion.jpg',
-      audioSrc: 'audio/lion.mp3'
+      image: './src/assets/img/lion.jpg',
+      audioSrc: '.src/audio/Animal(set_A)/lion.mp3'
     },
     {
       word: 'mouse',
       translation: 'мышь',
-      image: 'img/mouse.jpg',
-      audioSrc: 'audio/mouse.mp3'
+      image: './src/assets/img/mouse.jpg',
+      audioSrc: '.src/audio/Animal(set_A)/mouse.mp3'
     },
     {
       word: 'turtle',
       translation: 'черепаха',
-      image: 'img/turtle.jpg',
-      audioSrc: 'audio/turtle.mp3'
+      image: './src/assets/img/turtle.jpg',
+      audioSrc: '.src/audio/Animal(set_A)/turtle.mp3'
     },
     {
       word: 'dolphin',
       translation: 'дельфин',
-      image: 'img/dolphin.jpg',
-      audioSrc: 'audio/dolphin.mp3'
+      image: './src/assets/img/dolphin.jpg',
+      audioSrc: '.src/audio/Animal(set_A)/dolphin.mp3'
     }
   ],
   [
     {
       word: 'skirt',
       translation: 'юбка',
-      image: 'img/skirt.jpg',
-      audioSrc: 'audio/skirt.mp3'
+      image: './src/assets/img/skirt.jpg',
+      audioSrc: '.src/audio/Clothes/skirt.mp3'
     },
     {
       word: 'pants',
       translation: 'брюки',
-      image: 'img/pants.jpg',
-      audioSrc: 'audio/pants.mp3'
+      image: './src/assets/img/pants.jpg',
+      audioSrc: '.src/audio/Clothes/pants.mp3'
     },
     {
       word: 'blouse',
       translation: 'блузка',
-      image: 'img/blouse.jpg',
-      audioSrc: 'audio/blouse.mp3'
+      image: './src/assets/img/blouse.jpg',
+      audioSrc: '.src/audio/Clothes/blouse.mp3'
     },
     {
       word: 'dress',
       translation: 'платье',
-      image: 'img/dress.jpg',
-      audioSrc: 'audio/dress.mp3'
+      image: './src/assets/img/dress.jpg',
+      audioSrc: '.src/audio/Clothes/dress.mp3'
     },
     {
       word: 'boot',
       translation: 'ботинок',
-      image: 'img/boot.jpg',
-      audioSrc: 'audio/boot.mp3'
+      image: './src/assets/img/boot.jpg',
+      audioSrc: '.src/audio/Clothes/boot.mp3'
     },
     {
       word: 'shirt',
       translation: 'рубашка',
-      image: 'img/shirt.jpg',
-      audioSrc: 'audio/shirt.mp3'
+      image: './src/assets/img/shirt.jpg',
+      audioSrc: '.src/audio/Clothes/shirt.mp3'
     },
     {
       word: 'coat',
       translation: 'пальто',
-      image: 'img/coat.jpg',
-      audioSrc: 'audio/coat.mp3'
+      image: './src/assets/img/coat.jpg',
+      audioSrc: '.src/audio/Clothes/coat.mp3'
     },
     {
       word: 'shoe',
       translation: 'туфли',
-      image: 'img/shoe.jpg',
-      audioSrc: 'audio/shoe.mp3'
+      image: './src/assets/img/shoe.jpg',
+      audioSrc: '.src/audio/Clothes/shoe.mp3'
     }
   ],
   [
     {
       word: 'sad',
       translation: 'грустный',
-      image: 'img/sad.jpg',
-      audioSrc: 'audio/sad.mp3'
+      image: './src/assets/img/sad.jpg',
+      audioSrc: '.src/audio/Emotion/sad.mp3'
     },
     {
       word: 'angry',
       translation: 'сердитый',
-      image: 'img/angry.jpg',
-      audioSrc: 'audio/angry.mp3'
+      image: './src/assets/img/angry.jpg',
+      audioSrc: '.src/audio/Emotion/angry.mp3'
     },
     {
       word: 'happy',
       translation: 'счастливый',
-      image: 'img/happy.jpg',
-      audioSrc: 'audio/happy.mp3'
+      image: './src/assets/img/happy.jpg',
+      audioSrc: '.src/audio/Emotion/happy.mp3'
     },
     {
       word: 'tired',
       translation: 'уставший',
-      image: 'img/tired.jpg',
-      audioSrc: 'audio/tired.mp3'
+      image: './src/assets/img/tired.jpg',
+      audioSrc: '.src/audio/Emotion/tired.mp3'
     },
     {
       word: 'surprised',
       translation: 'удивлённый',
-      image: 'img/surprised.jpg',
-      audioSrc: 'audio/surprised.mp3'
+      image: './src/assets/img/surprised.jpg',
+      audioSrc: '.src/audio/Emotion/surprised.mp3'
     },
     {
       word: 'scared',
       translation: 'испуганный',
-      image: 'img/scared.jpg',
-      audioSrc: 'audio/scared.mp3'
+      image: './src/assets/img/scared.jpg',
+      audioSrc: '.src/audio/Emotion/scared.mp3'
     },
     {
       word: 'smile',
       translation: 'улыбка',
-      image: 'img/smile.jpg',
-      audioSrc: 'audio/smile.mp3'
+      image: './src/assets/img/smile.jpg',
+      audioSrc: '.src/audio/Emotion/smile.mp3'
     },
     {
       word: 'laugh',
       translation: 'смех',
-      image: 'img/laugh.jpg',
-      audioSrc: 'audio/laugh.mp3'
+      image: './src/assets/img/laugh.jpg',
+      audioSrc: '.src/audio/Emotion/laugh.mp3'
     }
   ]
   ];
