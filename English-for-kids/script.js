@@ -1,9 +1,10 @@
 import { createMainPage } from './pages/main-page';
 import { createNewPage } from './pages/new-page';
 
-const MENU = document.getElementById('MENU');
+
+export const MENU = document.getElementById('MENU');
 const MENU_ITEM = MENU.querySelectorAll('.header-item-link');
-const CHECKBOX = document.getElementById('CHECKBOX');
+export const CHECKBOX = document.getElementById('CHECKBOX');
 const MENU_CHECKBOX = document.getElementById('MENU_CHECKBOX');
 
 createMainPage();
@@ -14,22 +15,9 @@ MENU.addEventListener('click', (event) => {
     });
     if (event.target['classList'].value === 'header-item-link') event.target['classList'].add('active');
     if (event.target['id'] === 'MAIN') {
-        console.log('reload');
-        return createMainPage();
-    } else {
-        return createNewPage(event.target['id']);
-    }
-});
-
-const CARDS = document.querySelectorAll('.main-card');
-
-CHECKBOX.addEventListener('click', () => {
-    if (CHECKBOX.checked) {
-        CARDS.forEach(el => el.classList.remove('play-styles'));
-        MENU.classList.remove('on-play-menu');
-    } else {
-        CARDS.forEach(el => el.classList.add('play-styles'));
-        MENU.classList.add('on-play-menu');
+        createMainPage();
+    } else if (event.target['id'] ) {
+        createNewPage(event.target['id']);
     }
 });
 
@@ -46,8 +34,19 @@ MENU_CHECKBOX.addEventListener('click', () => {
 const CONTAINER = document.getElementById('CONTAINER');
 
 CONTAINER.addEventListener('click', ev => {
-    if (ev.target['id'] !== 'CONTAINER') {
-        createNewPage([ev.target['id']]);
-        console.log(ev.target['id']);
+    if (ev.target['id'] !== 'CONTAINER' && ev.target['id']) {
+        if (ev.target['classList'].value === 'main-card' || 'main-card-img') {
+            createNewPage([ev.target['id']]);
+        }
+    }
+});
+
+CHECKBOX.addEventListener('click', () => {
+    if (CHECKBOX.checked) {
+        document.querySelectorAll('.main-card').forEach(el => el.classList.remove('play-styles'));
+        MENU.classList.remove('on-play-menu');
+    } else {
+        document.querySelectorAll('.main-card').forEach(el => el.classList.add('play-styles'));
+        MENU.classList.add('on-play-menu');
     }
 });

@@ -324,8 +324,10 @@ nav {
     background-position: center 16px;
     bottom: 5px;
     right: 5px;
+}
+.rotate:hover {
     transition: .3s;
-    filter: grayscale(1);
+    filter: grayscale(100%);
 }
 
 .card-title {

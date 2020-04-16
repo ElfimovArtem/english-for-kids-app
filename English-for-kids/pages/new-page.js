@@ -2,7 +2,11 @@ import { Cards } from '../src/assets/cards';
 const CONTAINER = document.getElementById('CONTAINER');
 
 export const createNewPage = (id) => {
-    CONTAINER.querySelectorAll('div').forEach(el => el.remove());
+    CONTAINER.querySelectorAll('div').forEach(el => {
+        if (el['classList'].value === 'main-card' || 'card-container') {
+            el.remove();
+        }
+    });
    Cards[id].forEach(el => {
        const CARD_CONTAINER = document.createElement('div');
        CARD_CONTAINER.classList.add('card-container');
@@ -23,12 +27,20 @@ export const createNewPage = (id) => {
        CARD_TITLE_BACK.classList.add('card-title');
        CARD_TITLE_BACK.innerHTML = el['translation'];
 
-       FRONT.append(CARD_TITLE_FRONT);
        BACK.append(CARD_TITLE_BACK);
-       CARD.append(FRONT);
+       FRONT.append(CARD_TITLE_FRONT);
        CARD.append(BACK);
+       CARD.append(FRONT);
        CARD.append(ROTATE);
        CARD_CONTAINER.append(CARD);
        CONTAINER.append(CARD_CONTAINER);
    });
+
+    CONTAINER.addEventListener('click', event => {
+        if (event.target['classList'].value === 'rotate') {
+            console.log('popal');
+        } else {
+            console.log('net');
+        }
+    })
 };
