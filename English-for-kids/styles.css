@@ -175,6 +175,10 @@ nav {
     box-shadow: 0 10px 20px rgba(0, 0, 0, .4)
 }
 
+.card:hover {
+    box-shadow: 0 8px 14px rgba(0, 0, 0, .4)
+}
+
 .main-container {
     padding-top: 55px
 }
@@ -307,11 +311,18 @@ nav {
     display: flex;
     position: absolute;
     width: 100%;
+    border-radius: 5px;
     top: 0;
     bottom: 0;
+    perspective: 1000px;
+    backface-visibility: hidden;
     background-size: contain;
     background-repeat: no-repeat;
-    transition: .3s;
+    transition: 1s;
+}
+
+.back {
+    transform: rotateY(180deg);
 }
 
 .rotate {
@@ -324,6 +335,7 @@ nav {
     background-position: center 16px;
     bottom: 5px;
     right: 5px;
+    backface-visibility: hidden;
 }
 .rotate:hover {
     transition: .3s;
@@ -341,4 +353,8 @@ nav {
     pointer-events: none;
     background: #fff;
     color: #212529;
+}
+
+.translate {
+    transform: rotateY(180deg);
 }
