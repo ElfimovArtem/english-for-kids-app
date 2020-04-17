@@ -18,6 +18,10 @@ export const createNewPage = (id) => {
         }
     }
 
+    function Pronunciation () {
+        this.parentElement.children[3].play();
+    }
+
     Cards[id].forEach(el => {
         const CARD_CONTAINER = document.createElement('div');
         CARD_CONTAINER.classList.add('card-container');
@@ -26,6 +30,7 @@ export const createNewPage = (id) => {
         const FRONT = document.createElement('div');
         FRONT.classList.add('front');
         FRONT.setAttribute('style', `background-image: url("${el.image}");`);
+        FRONT.onclick = Pronunciation;
         const BACK = document.createElement('div');
         BACK.classList.add('back');
         BACK.setAttribute('style', `background-image: url("${el.image}");`);
