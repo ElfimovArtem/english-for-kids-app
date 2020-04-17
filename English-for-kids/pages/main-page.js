@@ -1,7 +1,14 @@
 import { Categories } from '../src/assets/cards';
-import { CHECKBOX } from '../script';
+import { CHECKBOX, MENU_ITEM } from '../script';
 
 const CONTAINER = document.getElementById('CONTAINER');
+
+function checkId () {
+    MENU_ITEM.forEach(el => {
+        el.classList.remove('active');
+        if (this.id === el.id) el.classList.add('active');
+    });
+}
 
 export const createMainPage = () => {
     CONTAINER.querySelectorAll('div').forEach(el => el.remove());
@@ -17,6 +24,7 @@ export const createMainPage = () => {
             NEW_CARD.classList.add('play-styles');
         }
         NEW_CARD.id = Categories[CategoryIndex].id;
+        NEW_CARD.onclick = checkId;
         CARD_IMG.classList.add('main-card-img');
         CARD_IMG.setAttribute('src', Categories[CategoryIndex].imgSRC);
         CARD_IMG.setAttribute('alt', Categories[CategoryIndex].title);

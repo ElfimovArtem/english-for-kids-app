@@ -3,7 +3,7 @@ import { createNewPage } from './pages/new-page';
 
 
 export const MENU = document.getElementById('MENU');
-const MENU_ITEM = MENU.querySelectorAll('.header-item-link');
+export const MENU_ITEM = MENU.querySelectorAll('.header-item-link');
 export const CHECKBOX = document.getElementById('CHECKBOX');
 const MENU_CHECKBOX = document.getElementById('MENU_CHECKBOX');
 

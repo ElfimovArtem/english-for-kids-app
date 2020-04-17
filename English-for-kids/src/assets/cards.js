@@ -345,49 +345,49 @@ export const Cards = [
       word: 'fish',
       translation: 'рыба',
       image: './src/assets/img/fish1.jpg',
-      audioSrc: './src/assets/audio/Animal(set_A)/fish.mp3',
+      audioSrc: './src/assets/audio/Animal(set_B)/fish.mp3',
       id: 1
     },
     {
       word: 'frog',
       translation: 'жаба',
       image: './src/assets/img/frog.jpg',
-      audioSrc: './src/assets/audio/Animal(set_A)/frog.mp3',
+      audioSrc: './src/assets/audio/Animal(set_B)/frog.mp3',
       id: 2
     },
     {
       word: 'giraffe',
       translation: 'жираф',
       image: './src/assets/img/giraffe.jpg',
-      audioSrc: './src/assets/audio/Animal(set_A)/giraffe.mp3',
+      audioSrc: './src/assets/audio/Animal(set_B)/giraffe.mp3',
       id: 3
     },
     {
       word: 'lion',
       translation: 'лев',
       image: './src/assets/img/lion.jpg',
-      audioSrc: './src/assets/audio/Animal(set_A)/lion.mp3',
+      audioSrc: './src/assets/audio/Animal(set_B)/lion.mp3',
       id: 4
     },
     {
       word: 'mouse',
       translation: 'мышь',
       image: './src/assets/img/mouse.jpg',
-      audioSrc: './src/assets/audio/Animal(set_A)/mouse.mp3',
+      audioSrc: './src/assets/audio/Animal(set_B)/mouse.mp3',
       id: 5
     },
     {
       word: 'turtle',
       translation: 'черепаха',
       image: './src/assets/img/turtle.jpg',
-      audioSrc: './src/assets/audio/Animal(set_A)/turtle.mp3',
+      audioSrc: './src/assets/audio/Animal(set_B)/turtle.mp3',
       id: 6
     },
     {
       word: 'dolphin',
       translation: 'дельфин',
       image: './src/assets/img/dolphin.jpg',
-      audioSrc: './src/assets/audio/Animal(set_A)/dolphin.mp3',
+      audioSrc: './src/assets/audio/Animal(set_B)/dolphin.mp3',
       id: 7
     }
   ],

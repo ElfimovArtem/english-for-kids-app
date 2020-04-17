@@ -1,4 +1,6 @@
 import { Cards } from '../src/assets/cards';
+import { CHECKBOX } from '../script';
+
 const CONTAINER = document.getElementById('CONTAINER');
 
 export const createNewPage = (id) => {
@@ -22,6 +24,10 @@ export const createNewPage = (id) => {
         this.parentElement.children[3].play();
     }
 
+    function addOpacity () {
+        this.classList.add('opacity');
+    }
+
     Cards[id].forEach(el => {
         const CARD_CONTAINER = document.createElement('div');
         CARD_CONTAINER.classList.add('card-container');
@@ -30,7 +36,6 @@ export const createNewPage = (id) => {
         const FRONT = document.createElement('div');
         FRONT.classList.add('front');
         FRONT.setAttribute('style', `background-image: url("${el.image}");`);
-        FRONT.onclick = Pronunciation;
         const BACK = document.createElement('div');
         BACK.classList.add('back');
         BACK.setAttribute('style', `background-image: url("${el.image}");`);
@@ -47,6 +52,14 @@ export const createNewPage = (id) => {
         const AUDIO = document.createElement('audio');
         const AUDIO_SRC = document.createElement('source');
         AUDIO_SRC.setAttribute('src', `${el.audioSrc}`);
+        if (!CHECKBOX.checked) {
+            ROTATE.classList.add('invisibility');
+            CARD_TITLE_FRONT.classList.add('invisibility');
+            FRONT.classList.add('front-size');
+            FRONT.onclick = addOpacity;
+        } else {
+            FRONT.onclick = Pronunciation;
+        }
         AUDIO.append(AUDIO_SRC);
         BACK.append(CARD_TITLE_BACK);
         FRONT.append(CARD_TITLE_FRONT);
@@ -57,6 +70,23 @@ export const createNewPage = (id) => {
         CARD_CONTAINER.append(CARD);
         CONTAINER.append(CARD_CONTAINER);
     });
+
+    CHECKBOX.addEventListener('click', () => {
+        if (!CHECKBOX.checked) {
+            document.querySelectorAll('.card').forEach(el => {
+                el.children[2].classList.add('invisibility');
+                el.children[1].children[0].classList.add('invisibility');
+                el.children[1].classList.add('front-size');
+                el.children[1].onclick = addOpacity;
+            });
+        } else {
+            document.querySelectorAll('.card').forEach(el => {
+                el.children[2].classList.remove('invisibility');
+                el.children[1].children[0].classList.remove('invisibility');
+                el.children[1].classList.remove('front-size');
+                el.children[1].onclick = Pronunciation;
+                el.children[1].classList.remove('opacity');
+            });
+        }
+    });
 };
-
-
