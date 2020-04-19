@@ -1,3 +1,12 @@
+/dist/*.jpg
+/dist/*.svg
+/dist/*.png
+/dist/*.js
+/dist/*.css
+/dist/*.mp3
+/node_modules
+/.idea
+
 # Logs
 logs
 *.log
