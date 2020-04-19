@@ -35,7 +35,7 @@ const CONTAINER = document.getElementById('CONTAINER');
 
 CONTAINER.addEventListener('click', ev => {
     if (ev.target['id'] !== 'CONTAINER' && ev.target['id']) {
-        if (ev.target['classList'].value === 'main-card' || 'main-card-img') {
+        if (ev.target['classList'].value === 'main-card' || 'main-card-img' || 'main-card-title') {
             createNewPage([ev.target['id']]);
         }
     }

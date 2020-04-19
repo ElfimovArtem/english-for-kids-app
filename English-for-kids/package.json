@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "webpack --mode development",
-    "prod": "webpack --mode prodaction"
+    "prod": "webpack --mode production"
   },
   "dependencies": {},
   "devDependencies": {
