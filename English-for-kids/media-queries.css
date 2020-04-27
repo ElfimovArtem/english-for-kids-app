@@ -1,0 +1,72 @@
+@media (max-width: 1430px) {
+    .header-container {
+        max-width: 1000px
+    }
+
+    .menu {
+        left: calc(500px - 50vw)
+    }
+}
+
+@media (max-width: 1080px) {
+    .header-container {
+        max-width: 650px
+    }
+
+    .menu {
+        left: calc(325px - 50vw)
+    }
+
+    .win-banner {
+        height: 60vh;
+    }
+
+    .failure-banner {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 730px) {
+    .header-container {
+        max-width: 300px
+    }
+
+    .menu {
+        width: 320px;
+        left: calc(150px - 50vw)
+    }
+
+    .header-item {
+        margin-left: 20px
+    }
+
+    .win-banner {
+        height: 60vh;
+    }
+
+    .failure-banner {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 430px) {
+    body {
+        background-size: 300px 300px
+    }
+
+    .card {
+        margin: 20px 0 !important
+    }
+
+    .header-item-link {
+        margin-left: 30px;
+    }
+
+    .win-banner {
+        height: 30vh;
+    }
+
+    .failure-banner {
+        height: 30vh;
+    }
+}

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="media-queries.css" rel="stylesheet" type="text/css">
+    <title>English for kids</title>
+</head>
+<body>
+<div id="root">
+    <div class="app-container">
+        <div class="header-container">
+            <nav role="navigation">
+                <div class="menuToggle">
+                    <input type="checkbox" id="MENU_CHECKBOX">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul class="menu" id="MENU">
+                        <li class="header-item">
+                            <a class="header-item-link active" id="MAIN">Main Page</a>
+                        </li>
+                        <li class="header-item">
+                            <a class="header-item-link" id="0">Action (set A)</a>
+                        </li>
+                        <li class="header-item">
+                            <a class="header-item-link" id="1">Action (set B)</a>
+                        </li>
+                        <li class="header-item">
+                            <a class="header-item-link" id="2">Action (set C)</a>
+                        </li>
+                        <li class="header-item">
+                            <a class="header-item-link" id="3">Adjective</a>
+                        </li>
+                        <li class="header-item">
+                            <a class="header-item-link" id="4">Animal (set A)</a>
+                        </li>
+                        <li class="header-item">
+                            <a class="header-item-link" id="5">Animal (set B)</a>
+                        </li>
+                        <li class="header-item">
+                            <a class="header-item-link" id="6">Clothes</a>
+                        </li>
+                        <li class="header-item">
+                            <a class="header-item-link" id="7">Emotion</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="switcher-container">
+                <label class="switcher">
+                    <input type="checkbox" id="CHECKBOX" class="switcher-input" checked>
+                    <span class="switcher-label" data-on="Train" data-off="Play"></span>
+                    <span class="switcher-handle"></span>
+                </label>
+            </div>
+        </div>
+        <div class="container main-container" id="CONTAINER"></div>
+    </div>
+</div>
+</body>
+</html>
